@@ -28,10 +28,6 @@ app.use(log1);
 
 app.use(log2);
 
-// templating engines
-app.set("view engine", "pug");
-app.set("views", "./views");
-
 const port = process.env.PORT || 3000;
 
 app.use('/', home);

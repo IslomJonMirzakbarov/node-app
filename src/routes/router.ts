@@ -1,4 +1,4 @@
-import { Application, Request, Response } from "express";
+import { Request, Response } from "express";
 const express = require("express");
 const router = express();
 const Joi = require("joi");
@@ -9,9 +9,9 @@ const courses = [
   { id: 3, name: "course3" },
 ];
 
-router.get("/", (req: Request, res: Response) => {
-  res.send(courses);
-});
+// router.get("/", (req: Request, res: Response) => {
+//   res.send(courses);
+// });
 
 router.get("/:id", (req: Request, res: Response) => {
   const course = courses.find((c) => c.id === parseInt(req.params.id));
