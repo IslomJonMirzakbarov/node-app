@@ -6,4 +6,4 @@ router.get("/", (req: Request, res: Response) => {
   res.render("index", { title: "My express app", message: "hello" });
 });
 
-module.exports = router;
+module.exports = router; 
