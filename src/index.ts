@@ -1,7 +1,7 @@
 import { Application, Request, Response } from "express";
 const express = require("express");
 const app: Application = express();
-const { log1, log2 } = require("../middleware/logger");
+const { log1, log2 } = require('./middleware/logger');
 const helmet = require("helmet");
 const morgan = require("morgan");
 const config = require("config");
